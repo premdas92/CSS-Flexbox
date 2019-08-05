@@ -26,7 +26,6 @@ body {
 }
 
 .form-row input {
-    /*width is divided equally*/
     flex: 1;
 }
 
@@ -55,17 +54,12 @@ body {
 .call-outs-container {
     margin: 40px auto 0 auto;
     display: flex;
-    /*flex-start will align the boxes from the top with height equal to its content.
-Same with flex-bottom and center. By default it takes Stretch, which has eqal height.*/
-    /*align-items: flex-start;*/
     justify-content: space-between;
-    /*space-between takes all the extra space left in the width and divides it equally which gives a margin between the divs*/
 }
 
 .call-out {
     padding: 20px;
     margin-bottom: 20px;
-    /*The flex way to give width*/
     flex-basis: 30%;
     box-sizing: border-box;
 }
@@ -93,7 +87,6 @@ Same with flex-bottom and center. By default it takes Stretch, which has eqal he
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*default is no-wrap*/
 }
 
 .fixed-size {
